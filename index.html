@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Media Evolution • JOBELLE FLORES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    :root{
+      --bg:#0a0a14;
+      --card:rgba(30,30,50,0.45);
+      --gold:#f4d03f;
+      --cream:#fdf4e3;
+      --fb:#1877f2;
+      --yt:#ff0000;
+      --twitter:#1da1f2;
+      --iphone:#a2aaad;
+      --tiktok:#ff0050;
+      --ai:#10a37f;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--cream);overflow-x:hidden;}
+    #bubbles{position:fixed;inset:0;pointer-events:none;z-index:-1;}
+    .bubble{
+      position:absolute;background:radial-gradient(circle,rgba(244,208,63,0.18),transparent 70%);
+      border-radius:50%;opacity:0.7;animation:float 20s infinite linear;
+    }
+    @keyframes float{0%{transform:translateY(100vh) scale(0.4);opacity:0}15%{opacity:0.7}85%{opacity:0.7}100%{transform:translateY(-120px) scale(1);opacity:0}}
+
+    header{height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:0 30px;}
+    h1{font-family:'Playfair Display',serif;font-size:9rem;color:var(--gold);text-shadow:0 0 60px rgba(244,208,63,0.4);opacity:0;animation:fadeIn 2.2s forwards;}
+    header p{font-size:2.6rem;color:var(--cream);margin-top:20px;opacity:0;animation:fadeIn 2s 0.9s forwards;}
+    .name{font-size:3.4rem;color:var(--gold);margin-top:80px;font-weight:700;}
+
+    main{max-width:1350px;margin:0 auto;padding:140px 40px;}
+    .title{font-family:'Playfair Display',serif;font-size:6rem;text-align:center;margin:160px 0 110px;color:var(--gold);
+      opacity:0;transform:translateY(40px);transition:1.8s;}
+    .title.show{opacity:1;transform:translateY(0);}
+
+    .card{background:var(--card);backdrop-filter:blur(22px);border-radius:45px;padding:100px 80px;margin:90px 0;
+      border:1px solid rgba(244,208,63,0.2);box-shadow:0 30px 90px rgba(0,0,0,0.7);text-align:center;
+      opacity:0;transform:translateY(70px);transition:2s;}
+    .card.show{opacity:1;transform:translateY(0);}
+
+    .big-icon{font-size:16rem;margin:50px 0;filter:drop-shadow(0 0 50px currentColor);animation:gentleFloat 12s infinite;}
+    @keyframes gentleFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-25px)}}
+
+    .timeline{padding:120px 0;position:relative;}
+    .timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:6px;
+      background:linear-gradient(to bottom,transparent,var(--gold),transparent);border-radius:10px;}
+    .t-item{display:flex;align-items:center;margin:160px 0;opacity:0;transform:translateY(60px);transition:1.8s;}
+    .t-item.show{opacity:1;transform:translateY(0);}
+    .t-item:nth-child(even){flex-direction:row-reverse;}
+    .t-box{background:var(--card);padding:60px;border-radius:40px;width:46%;
+      border:1px solid rgba(244,208,63,0.25);backdrop-filter:blur(15px);}
+    .t-box h3{font-size:3rem;margin-bottom:22px;}
+    .t-box p{font-size:1.9rem;color:var(--cream);margin-bottom:18px;}
+    .fact{color:var(--gold);font-weight:600;font-size:1.8rem;margin:18px 0;}
+    .mil{margin-top:25px;padding-top:25px;border-top:1px dashed rgba(244,208,63,0.4);color:#ccc;font-style:italic;font-size:1.75rem;}
+
+    .quote{font-family:'Playfair Display',serif;font-size:6rem;text-align:center;padding:200px 0;color:var(--gold);line-height:1.5;
+      opacity:0;transform:translateY(50px);transition:2.2s;}
+    .quote.show{opacity:1;transform:translateY(0);}
+
+    footer{text-align:center;padding:180px 20px;font-size:2rem;color:#aaa;}
+    @keyframes fadeIn{to{opacity:1;transform:translateY(0);}}
+  </style>
+</head>
+<body>
+
+<div id="bubbles"></div>
+
+<header>
+  <h1>New Media<br>Evolution</h1>
+  <p>Tracing the History of New Media in Media & Information Literacy</p>
+  <div class="name">JOBELLE FLORES • 2025</div>
+</header>
+
+<main>
+
+  <div class="title show">What is New Media?</div>
+  <div class="card show">
+    <i class="fas fa-earth-americas big-icon" style="color:#86efac;"></i>
+    <p style="font-size:2.6rem;line-height:1.9;">
+      Interactive, digital, networked, and user-generated content that spreads instantly across the globe.<br><br>
+      Key shift: From passive consumers to active creators and distributors.
+    </p>
+  </div>
+
+  <div class="title">Chronological Timeline</div>
+
+  <div class="timeline">
+
+    <div class="t-item show">
+      <div class="t-box">
+        <h3><i class="fas fa-network-wired" style="color:#4c9bef;margin-right:15px;"></i> 1969 – ARPANET</h3>
+        <p>First packet-switching network</p>
+        <div class="fact">First message crashed after typing “LO”</div>
+        <div class="mil"><strong>MIL Impact:</strong> Birth of digital connectivity → need for source verification</div>
+      </div>
+    </div>
+
+    <div class="t-item show">
+      <div class="t-box">
+        <h3><i class="fas fa-globe" style="color:#0066ff;margin-right:15px;"></i> 1991 – World Wide Web</h3>
+        <p>Tim Berners-Lee invents the Web</p>
+        <div class="fact">First website still online today</div>
+        <div class="mil"><strong>MIL Impact:</strong> Information explosion → evaluate credibility & bias</div>
+      </div>
+    </div>
+
+    <div class="t-item show">
+      <div class="t-box">
+        <h3><i class="fab fa-facebook" style="color:var(--fb);margin-right:15px;"></i><i class="fab fa-youtube" style="color:var(--yt);margin:0 15px;"></i><i class="fab fa-twitter" style="color:var(--twitter);"></i> 2004–2006 – Web 2.0</h3>
+        <p>Facebook, YouTube, Twitter</p>
+        <div class="fact">YouTube’s first video = 19 seconds</div>
+        <div class="mil"><strong>MIL Impact:</strong> Citizen journalism, copyright, digital citizenship</div>
+      </div>
+    </div>
+
+    <div class="t-item show">
+      <div class="t-box">
+        <h3><i class="fas fa-mobile-alt" style="color:var(--iphone);margin-right:15px;"></i> 2007 – iPhone</h3>
+        <p>Steve Jobs revolutionizes mobile internet</p>
+        <div class="fact">More smartphones than toothbrushes!</div>
+        <div class="mil"><strong>MIL Impact:</strong> Always-on culture → privacy & digital wellness</div>
+      </div>
+    </div>
+
+    <div class="t-item show">
+      <div class="t-box">
+        <h3><i class="fab fa-tiktok" style="color:var(--tiktok);margin-right:15px;"></i> 2016–2020 – Short Video</h3>
+        <p>TikTok, Reels, Shorts dominate</p>
+        <div class="fact">Attention span now 8 seconds</div>
+        <div class="mil"><strong>MIL Impact:</strong> Viral misinformation → rapid fact-checking needed</div>
+      </div>
+    </div>
+
+    <div class="t-item show">
+      <div class="t-box">
+        <h3><i class="fas fa-robot" style="color:var(--ai);margin-right:15px;"></i> 2022+ – AI Era</h3>
+        <p>ChatGPT, deepfakes, AI art</p>
+        <div class="fact">90% of content may be AI-made by 2026</div>
+        <div class="mil"><strong>MIL Impact:</strong> Detecting synthetic media is now essential</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="title">Personal Reflection</div>
+  <div class="card">
+    <i class="fas fa-heart big-icon" style="color:#ff6b9d;"></i>
+    <p style="font-size:2.6rem;line-height:2;">
+      As <strong>JOBELLE FLORES</strong>, I now see new media as both a gift and a responsibility.<br><br>
+      Every share has power. MIL has taught me to pause, verify, and think critically — skills I will carry for life.
+    </p>
+  </div>
+
+  <p class="quote show">
+    “The future belongs to those<br>
+    <strong>who master information,<br>not those drowned by it.</strong>”
+  </p>
+
+  <div class="card" style="text-align:center;padding:220px;">
+    <i class="fas fa-crown big-icon" style="color:var(--gold);"></i>
+    <h2 style="font-size:10rem;color:var(--gold);text-shadow:0 0 80px rgba(244,208,63,0.6);">
+      Thank You!
+    </h2>
+    <p style="font-size:5rem;margin-top:70px;color:var(--gold);font-weight:700;">
+      JOBELLE FLORES
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>References: UNESCO • MIT 2018 • Henry Jenkins • Pew Research • Statista 2025</p>
+</footer>
+
+<script>
+  // Calm golden bubbles
+  function createBubble(){
+    const b=document.createElement('div');b.classList.add('bubble');
+    b.style.width=b.style.height=Math.random()*180+100+'px';
+    b.style.left=Math.random()*100+'%';
+    b.style.animationDuration=Math.random()*20+20+'s';
+    document.getElementById('bubbles').appendChild(b);
+    setTimeout(()=>b.remove(),40000);
+  }
+  setInterval(createBubble,2800);
+  for(let i=0;i<10;i++)createBubble();
+
+  const observer=new IntersectionObserver(e=>e.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('show');}),{threshold:0.15});
+  document.querySelectorAll('.title,.card,.t-item,.quote').forEach(el=>observer.observe(el));
+</script>
+
+</body>
+</html>
